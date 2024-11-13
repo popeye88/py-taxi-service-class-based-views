@@ -30,6 +30,8 @@
           {% for car in driver.cars.all %}
             <a href="{% url 'taxi:car-detail' car.id %}">{{ car.model }}</a>
             {% if not forloop.last %}, {% endif %}
+            {% empty %}
+            No cars
           {% endfor %}
         </td>
       </tr>

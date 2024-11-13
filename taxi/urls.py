@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import CarDetailView, CarListView, DriverDetailView, \
+from taxi.views import CarDetailView, CarListView, DriverDetailView, \
     DriverListView, \
     ManufacturerListView, index
 
